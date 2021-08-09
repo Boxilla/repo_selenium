@@ -20,7 +20,10 @@ public class PruebasUnitariasSelenium {
 	@Before
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("headless");
+		options.addArguments("disable-gpu");
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("http://localhost:3000/");
 	}
