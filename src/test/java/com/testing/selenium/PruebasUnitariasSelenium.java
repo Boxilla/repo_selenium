@@ -19,7 +19,7 @@ public class PruebasUnitariasSelenium {
 	
 	@Before
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://localhost:3000/");
