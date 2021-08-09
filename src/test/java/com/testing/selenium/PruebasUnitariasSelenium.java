@@ -25,7 +25,7 @@ public class PruebasUnitariasSelenium {
 		options.addArguments("disable-gpu");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get("http://localhost:3000/");
+		driver.get("http://4962f2d6e2d8.ngrok.io");
 		System.out.println("Title of the page is: " );
 	}
 	
