@@ -26,6 +26,7 @@ public class PruebasUnitariasSelenium {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("http://localhost:3000/");
+		System.out.println("Title of the page is: " );
 	}
 	
 	@Test
