@@ -156,9 +156,10 @@ public class FirstTest {
 	}
 	
 	
-	@After
+	/*@After
 	public void tearDown() {
 		driver.quit();
 	}
+    */
 }
 
