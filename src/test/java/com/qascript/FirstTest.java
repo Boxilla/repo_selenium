@@ -27,7 +27,7 @@ public class FirstTest {
 		options.addArguments("disable-gpu");
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		driver.get("http://2b3f7831f1ac.ngrok.io");
+		driver.get("http://localhost:3000/");
 		System.out.println("Title of the page is: " );
 	}
 	
