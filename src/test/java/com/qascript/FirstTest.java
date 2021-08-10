@@ -26,7 +26,7 @@ public class FirstTest {
 		options.addArguments("headless");
 		options.addArguments("disable-gpu");
 		driver = new ChromeDriver(options);
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		driver.get("http://2b3f7831f1ac.ngrok.io");
 		System.out.println("Title of the page is: " );
 	}
